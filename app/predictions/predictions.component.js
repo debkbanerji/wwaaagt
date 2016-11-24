@@ -9,7 +9,7 @@ angular.module('predictions').component('predictions', {
         self.predicted = firebase.database().ref().child("already-predicted");
         self.thisUserRef = self.predicted.child(self.user.uid);
 
-        console.log(self.user.uid);
+        // console.log(self.user.uid);
         self.ranges = $firebaseArray(self.rangesRef);
         // console.log("PREDICTED");
 
