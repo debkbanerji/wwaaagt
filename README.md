@@ -1,2 +1,2 @@
-# wwaaagt
-Web app for keeping track of everyone's wwaaagt predictions
+# WWAAAGT
+This is the web app for keeping track of our WWAAAGT predictions. You are allowed to meddle in order to speed up AAAGT, but you must not intentionally slow down or prevent AAAGT. If you have any questions, or requests for changes to the database, ask in the group chat. Most importantly, do not reveal the true nature of WWAAAGT to anyone outside of WWAAAGT. If you are not part of WWWAAGT, move along.

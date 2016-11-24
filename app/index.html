@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-ng-app="wwaaagtApp">
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>WWAAAGT</title>
+    <!--<link rel="shortcut icon" type="image/png" href="assets/Favicon.png"/>-->
+
+    <meta property="og:title" content="WWAAAGT"/>
+    <meta property="og:description" content="This is the web app for keeping track of our WWAAAGT predictions. You are allowed to meddle in order to speed up AAAGT, but you must not intentionally slow down or prevent AAAGT. If you have any questions, or requests for changes to the database, ask in the group chat. Most importantly, do not reveal the true nature of WWAAAGT to anyone outside of WWAAAGT. If you are not part of WWWAAGT, move along."/>
+    <meta property="og:image" content="PREVIEW_IMAGE_URL"/>
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap Material Design -->
+    <link href="CSS/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="CSS/ripples.min.css" rel="stylesheet">
+    <script src="JS/material.min.js"></script>
+    <script src="JS/ripples.min.js"></script>
+
+    <!-- Dropdown.js -->
+    <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+
+    <!--Custom css-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="app.animations.css">
+
+
+    <!--AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBxTrXcIV5HkiCLaq8pzrGEZZPhcqdOj5g",
+            authDomain: "wwaaagt.firebaseapp.com",
+            databaseURL: "https://wwaaagt.firebaseio.com",
+            storageBucket: "wwaaagt.appspot.com",
+            messagingSenderId: "358107873167"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.0/angularfire.min.js"></script>
+
+
+    <!--Modules-->
+
+    <!--main 'app' module-->
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <!--'login' module-->
+    <script src="login/login.module.js"></script>
+    <script src="login/login.component.js"></script>
+
+    <!--'nav-bar' module-->
+    <script src="nav-bar/nav-bar.module.js"></script>
+    <script src="nav-bar/nav-bar.component.js"></script>
+
+    <!--'about' module-->
+    <script src="about/about.module.js"></script>
+    <script src="about/about.component.js"></script>
+
+    <!--'predictions' module-->
+    <script src="predictions/predictions.module.js"></script>
+    <script src="predictions/predictions.component.js"></script>
+
+</head>
+<body>
+
+<div class="jumbotron heading" style="width: 100vw">
+    <h1 class="heading">WWAAAGT</h1>
+</div>
+
+<div class="view-container">
+    <div data-ng-view class="view-frame"></div>
+</div>
+
+<!--<br>-->
+<!--<br>-->
+
+</body>
+</html>
+
