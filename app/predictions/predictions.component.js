@@ -17,7 +17,7 @@ angular.module('predictions').component('predictions', {
         // console.log(self.thisUserObj);
 
         self.predict = function(range) {
-            self.thisUserObj.$value = true;
+            self.thisUserObj.$value = self.user.displayName;
             self.thisUserObj.$save();
             // console.log(range.users);
             // console.log(self.user);
