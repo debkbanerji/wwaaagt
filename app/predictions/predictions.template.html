@@ -1,9 +1,20 @@
-
 <nav-bar></nav-bar>
 <div class="row">
     <div class="col-xs-12">
         <div class="container-fluid">
-            <h2>TODO: Create module 'Predictions'</h2>
+            <div ng-repeat="range in $ctrl.ranges">
+                <div class="panel" style="padding: 5px">
+                    <h4><strong>{{range.range}}</strong></h4>
+                    <div ng-repeat="user in range.users">
+                        <p>{{user}}</p>
+                    </div>
+                    <div ng-show="!$ctrl.thisUserObj.$value">
+                        <button class="btn btn-raised btn-success btn-xs" ng-click="$ctrl.predict(range)">
+                            Select
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
