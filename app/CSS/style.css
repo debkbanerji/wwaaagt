@@ -2,6 +2,30 @@ a, u {
     text-decoration: none !important;
 }
 
+#main-banner-image {
+    background-image: url("../assets/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    width: 30vw;
+    height: 30vw;
+    position: fixed;
+    align-content: center;
+    z-index: -1;
+}
+
+.centered {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#header-push {
+    height: 30vw;
+}
+
 
 .heading {
     text-align: center;

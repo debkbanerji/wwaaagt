@@ -8,7 +8,8 @@
     <!--<link rel="shortcut icon" type="image/png" href="assets/Favicon.png"/>-->
 
     <meta property="og:title" content="WWAAAGT"/>
-    <meta property="og:description" content="This is the web app for keeping track of our WWAAAGT predictions. You are allowed to meddle in order to speed up AAAGT, but you must not intentionally slow down or prevent AAAGT. If you have any questions, or requests for changes to the database, ask in the group chat. Most importantly, do not reveal the true nature of WWAAAGT to anyone outside of WWAAAGT. If you are not part of WWWAAGT, move along."/>
+    <meta property="og:description"
+          content="This is the web app for keeping track of our WWAAAGT predictions. You are allowed to meddle in order to speed up AAAGT, but you must not intentionally slow down or prevent AAAGT. If you have any questions, or requests for changes to the database, ask in the group chat. Most importantly, do not reveal the true nature of WWAAAGT to anyone outside of WWAAAGT. If you are not part of WWWAAGT, move along."/>
     <meta property="og:image" content="PREVIEW_IMAGE_URL"/>
 
     <!--JQuery-->
@@ -84,12 +85,17 @@
 </head>
 <body>
 
-<div class="jumbotron heading" style="width: 100vw">
-    <h1 class="heading">♥ WWAAAGT ♥</h1>
-</div>
+<div id="main-banner-image" class="centered"></div>
+<div id="header-push"></div>
 
-<div class="view-container">
-    <div data-ng-view class="view-frame"></div>
+<!--<div class="jumbotron heading" style="width: 100vw">-->
+<!--&lt;!&ndash;<h1 class="heading">♥ WWAAAGT ♥</h1>&ndash;&gt;-->
+<!--<img src="/assets/logo.png" style="width: 400px"/>-->
+<!--</div>-->
+<div style="background-color: #EEEEEE; height: 100%">
+    <div class="view-container">
+        <div data-ng-view class="view-frame"></div>
+    </div>
 </div>
 
 <!--<br>-->
