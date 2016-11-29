@@ -16,7 +16,7 @@ a, u {
 
 .centered {
     position: fixed;
-    top: 30%;
+    top: 15vw;
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
